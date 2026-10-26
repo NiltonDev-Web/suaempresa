@@ -87,7 +87,7 @@ const Index = () => {
 
     const dataToSubmit = {
       access_key: "1557417f-44fb-4e9b-baa8-32fc0be8c2c8",
-      subject: "Nova Enquete Recebida - NS Tecnologias",
+      subject: "Nova Enquete Recebida - SUA EMPRESA",
       from_name: surveyName,
       name: surveyName,
       email: surveyEmail,
@@ -128,7 +128,7 @@ const Index = () => {
     { src: calibrationImage, alt: "Técnico calibrando balança", title: "Calibração Certificada" },
   ];
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault(); // Impede a página de recarregar
 
   // 1. Criamos um objeto com os dados e sua Chave de Acesso
@@ -174,7 +174,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Scale className="h-15 w-20 text-primary" />
-              <span className="text-2xl font-bold text-foreground">NS TECNOLOGIA EM MANUTENÇÃO E CALIBRAÇÃO</span>
+              <span className="text-2xl font-bold text-foreground">SUA EMPRESA DE MANUTENÇÃO E CALIBRAÇÃO</span>
             </div>
             
             <div className="hidden md:flex items-center gap-6">
@@ -574,11 +574,11 @@ const Index = () => {
                   <Mail className="h-6 w-6 text-primary shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">E-mail</h3>
-                    <p className="text-muted-foreground">contato@nstecnologias.com.br</p>
+                    <p className="text-muted-foreground">suaempresa@nstecnologias.com.br</p>
                     
                   </div>
                 </div>
-.
+
                 <div className="flex items-start gap-4">
                   <MapPin className="h-6 w-6 text-primary shrink-0 mt-1" />
                   <div>
@@ -649,7 +649,7 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Scale className="h-8 w-8 text-primary" />
-                <span className="text-2xl font-bold">NS Tecnologias</span>
+                <span className="text-2xl font-bold">SUA EMPRESA</span>
               </div>
               <p className="text-background/80">
                 Especialistas em manutenção, calibração e venda de peças para balanças industriais.
@@ -688,7 +688,7 @@ const Index = () => {
           </div>
 
           <div className="border-t border-background/20 mt-8 pt-8 text-center text-background/60">
-            <p>&copy; 2026 NS Tecnologias. Todos os direitos reservados.</p>
+            <p>&copy; 2026 SUA EMPRESA. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
